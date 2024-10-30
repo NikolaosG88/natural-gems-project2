@@ -1,5 +1,11 @@
 const mongoose = require('mongoose');
 
+
+const naturalGemSchema = new mongoose.Schema({
+  // YOU DO: Define properties of food schema
+});
+
+
 const userSchema = mongoose.Schema({
   username: {
     type: String,
@@ -9,6 +15,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  hobby: naturalGemSchema
 });
 
 const User = mongoose.model('User', userSchema);
