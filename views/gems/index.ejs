@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My gem collection</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <% if(user) { %>
+        <a href="/users/<%=user._id%>/gems">View my Natural Gem Collection</a>
+        <a href="/auth/sign-out">Sign Out</a>
+      <% } else { %>
+        <a href="/auth/sign-in">Sign In</a>
+        <a href="/auth/sign-up">Sign Up</a>
+      <% } %>
+    </nav>
+    <h1>Welcome to my gem collection, list</h1>
+    <a href="/users/<%=user._id%>/gems/new">Add a Gem</a>
+    <ul>
+      <% gems.forEach((gem)=>{ %>
+        <li><%= gem.name %>, <%= gem.characteristic %>, <%= gem.description %>, <%= gem.pieces %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

@@ -15,8 +15,8 @@ const gemsController = require('./controllers/gems.js');
 
 const port = process.env.PORT ? process.env.PORT : '3000';
 
-mongoose.connect(process.env.MONGODB_URI);
 
+mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on('connected', () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
@@ -32,24 +32,30 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
-  res.render('index.ejs', {
-    user: req.session.user,
-  });
-});
+app.use(passUserToView)
 
-app.get('/vip-lounge', (req, res) => {
+app.get('/', (req, res) => {
+  // Check if the user is signed in
   if (req.session.user) {
-    res.send(`Welcome to the party ${req.session.user.username}.`);
+    // Redirect signed-in users to their applications index
+    res.redirect(`/users/${req.session.user._id}/gems`);
   } else {
-    res.send('Sorry, no guests allowed.');
+    // Show the homepage for users who are not signed in
+    res.render('home.ejs');
   }
 });
 
-app.use(passUserToView)
+// app.get('/vip-lounge', (req, res) => {
+//   if (req.session.user) {
+//     res.send(`Welcome to the party ${req.session.user.username}.`);
+//   } else {
+//     res.send('Sorry, no guests allowed.');
+//   }
+// });
+
 app.use('/auth', authController);
 app.use(isSignedIn);
-app.use('/users/:userId/hobby', gemsController);
+app.use('/users/:userId/gems', gemsController);
 
 
 //_______________________listeners________________________________//
