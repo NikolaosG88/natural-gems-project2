@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= gem.name %></title>
+</head>
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+  <h1><%= gem.name%><h1>
+
+    <a href="/users/<%= user._id %>/gems/<%= gem._id %>/edit">
+        Edit this application
+      </a>
+    <form
+    action="/users/<%= user._id %>/gems/<%= gem._id %>?_method=DELETE"
+    method="POST"
+  >
+    <button type="submit">Delete this gem from my collectionn</button>
+  </form>
+</body>
+</html>

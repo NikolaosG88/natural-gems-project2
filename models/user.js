@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const gemSchema = new mongoose.Schema({
   name: String,
   characteristic: String,

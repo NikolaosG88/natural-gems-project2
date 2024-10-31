@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editing <%= gem.name %></title>
+</head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Edit a Gem <%= gem.name %></h1>
+    <form action="/users/<%= user._id %>/gems/<%= gem._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <label for="name">Gem Name:</label>
+        <input type="text" name="name" id="name" value="<%= gem.name %>" required>
+        <br>
+        <label for="characteristic">Characteristic:</label>
+        <input type="text" name="characteristic" id="characteristic" value="<%= gem.characteristic %>" required>
+        <br>
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" value="<%= gem.description %>">
+        <br>
+        <label for="pieces">Number of pieces:</label>
+        <input type="number" name="pieces" id="pieces" value="<%= gem.pieces %>" required>
+         <br>
+        <label for="image">Add image:</label>
+        <input type="file" name="image" id="image" accept="image/*">
+        <br>
+        <br>
+        <% if (gem.image) { %>
+            <p>Current Image:</p>
+            <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="200">
+          <% } %>
+          <br>
+          <br>
+        <button type="submit">Update Gem </button>
+        <br>
+    </form>
+    <br>
+    <button><a href="/">Back to collection</a></button>
+      </form>
+  </body>
+</html>
