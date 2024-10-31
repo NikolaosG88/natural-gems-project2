@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.username %>'s Profile</title>
+</head>
+<body>
+  <%- include('../partials/_navbar.ejs') %>
+  <h1><%= user.username %>'s Gem Collection</h1>
+  <button><a href="/users">Back to Community</a></button>
+
+  <ul>
+    <% user.gems.forEach(gem => { %>
+      <li>
+        <h3><%= gem.name %></h3>
+        <p>Characteristic: <%= gem.characteristic %></p>
+        <p>Description: <%= gem.description %></p>
+        <p>Pieces: <%= gem.pieces %></p>
+        <% if (gem.image) { %>
+          <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="150">
+        <% } %>
+      </li>
+    <% }); %>
+  </ul>
+  <button><a href="/users">Back to Community</a></button>
+</body>
+</html>

@@ -32,7 +32,7 @@ router.get('/new', async (req, res) => {
 router.post('/', upload.single('image'), async (req, res) => {
     try {
         const currentUser = await User.findById(req.session.user._id);
-    const newGem = {
+        const newGem = {
         name: req.body.name,
         characteristic: req.body.characteristic,
         description: req.body.description,
@@ -93,10 +93,10 @@ router.get('/:gemId', async (req, res) => {
       const currentUser = await User.findById(req.session.user._id);
       const gem = currentUser.gems.id(req.params.gemId);
 
-    gem.name = req.body.name;
-    gem.characteristic = req.body.characteristic;
-    gem.description = req.body.description;
-    gem.pieces = req.body.pieces;
+      gem.name = req.body.name;
+      gem.characteristic = req.body.characteristic;
+      gem.description = req.body.description;
+      gem.pieces = req.body.pieces;
 
     if (req.file) {
       gem.image = req.file.path;
