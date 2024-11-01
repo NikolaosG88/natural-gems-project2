@@ -29,7 +29,6 @@ h1, h2 {
   color: #333;
 }
 
-
 .top-bar {
   width: 100%;
   background-color: #333;
@@ -48,7 +47,6 @@ h1, h2 {
 .top-bar nav a:hover {
   color: #ffdd57;
 }
-
 
 section.greetings, section.info-action {
   text-align: center;

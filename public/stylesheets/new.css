@@ -61,13 +61,7 @@ form {
     text-decoration: none;
     color: white !important;
   }
-  
 
-  .back-button {
-    background-color: #555;
-    color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    text-decoration: none;
-    border-radius: 4px;
+  button:hover {
+   background-color: rgb(153, 32, 32);
   }
