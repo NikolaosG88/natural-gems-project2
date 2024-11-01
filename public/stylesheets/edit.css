@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poller+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 35px;
+  }
+
+    p {
+        font-size: 15px; /* Increased size for readability */
+        line-height: 1.5;
+        padding: 15px; /* Space inside the box */
+        background-color: #f4f4f9; /* Light background color */
+        border: 2px solid #ccc; /* Optional border for definition */
+        border-radius: 8px; /* Rounded corners */
+        color: #333;
+        width: 80%; /* Width control */
+        max-width: 600px; /* Prevents it from getting too wide */
+        margin: 20px auto; /* Center aligns the paragraph and adds space around it */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+  
+
+  .edit-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+  }
+  .edit-group a:hover {
+    color: green;
+  }
+
+  .delete-group {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delete-group button:hover {
+    background-color: rgb(192, 44, 44);
+  }
+
+  button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
