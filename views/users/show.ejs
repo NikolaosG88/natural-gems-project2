@@ -10,7 +10,7 @@
   <section class="greetings">
     <h1>Explore <%= user.username %>'s Gem Collection</h1>
   </section>
-  <section class="info-action"> <button><a href="/users">Back to Community</a></button></section>
+  <section class="info-action"><a href="/users">Back to Community</a></section>
   <section class="crystals">
     <div class="gems">
       <% user.gems.forEach(gem => { %>
@@ -29,7 +29,7 @@
         </div>
       <% }); %>
     </div>
-    <section class="info-action"> <button><a href="/users">Back to Community</a></button></section>
+    <section class="info-action"><a href="/users">Back to Community</a></section>
   </section>
 </body>
 </html>
