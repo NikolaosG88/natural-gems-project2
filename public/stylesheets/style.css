@@ -1,0 +1,122 @@
+/* public/stylesheets/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poller+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall page styling */
+body {
+  font-family: Itim, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Navigation Bar */
+.top-bar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-bar nav a {
+  color: #f5f5f5;
+  margin: 0 15px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.top-bar nav a:hover {
+  color: #ffdd57;
+}
+
+/* Greeting and Action Section */
+section.greetings, section.info-action {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.info-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.info-action a:hover {
+  background-color: hsl(244, 72%, 50%);
+  color: white;
+}
+
+/* Gems Collection */
+section.crystals .gems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+
+section.crystals .gem-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.crystals .gem-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+section.crystals .gem-item .gem-info {
+  flex: 1;
+}
+
+section.crystals .gem-item h2 {
+  font-size: 1.4em;
+  margin: 0;
+  color: #007acc;
+}
+
+section.crystals .gem-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+section.crystals .gem-item li {
+  font-size: 0.95em;
+  color: #555;
+}

@@ -3,33 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>My gem collection</title>
   </head>
   <body>
+    <section class="top-bar">
     <nav>
-      <a href="/">Home</a>
+      <a href="/">Home..</a>
       <% if(user) { %>
-        <a href="/users/<%=user._id%>/gems">View my Natural Gem Collection </a>
-        <a href="/users/">Explore Our Gem Collectors Community</a>
+        <a href="/users/<%=user._id%>/gems">View my Natural Gem Collection... </a>
+        <a href="/users/">Explore Our Gem Collectors Community...</a>
         <a href="/auth/sign-out">Sign Out</a>
       <% } else { %>
         <a href="/auth/sign-in">Sign In</a>
         <a href="/auth/sign-up">Sign Up</a>
       <% } %>
     </nav>
+  </section>
+  <section class="greetings">
     <h1>Welcome to my gem collection</h1>
+  </section>
+  <section class="info-action">
     <h2>Username: <%= user.username %></h2>
     <a href="/users/<%=user._id%>/gems/new">Add a Gem</a>
-    <ul>
-      <% gems.forEach((gem)=>{ %>
-      <h2><a href="/users/<%= user._id %>/gems/<%= gem._id %>"><%= gem.name %></a></h2>
-      <li>Main Characteristic: <%= gem.characteristic %></li>
-      <li>Description : <%= gem.description %></li>
-      <li>Pieces available : <%= gem.pieces %></li>
-      <% if (gem.image) { %>
-       <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="200">
-      <% } %>
-    <% }) %>
-    </ul>
+  </section>
+  <section class="crystals">
+    <div class="gems">
+      <% gems.forEach((gem) => { %>
+        <div class="gem-item">
+          <% if (gem.image) { %>
+            <img src="/<%= gem.image %>" alt="<%= gem.name %>">
+          <% } %>
+          <div class="gem-info">
+            <h2><a href="/users/<%= user._id %>/gems/<%= gem._id %>"><%= gem.name %></a></h2>
+            <ul>
+              <li>Main Characteristic: <%= gem.characteristic %></li>
+              <li>Description: <%= gem.description %></li>
+              <li>Pieces available: <%= gem.pieces %></li>
+            </ul>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </section>
   </body>
 </html>

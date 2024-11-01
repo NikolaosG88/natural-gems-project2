@@ -1,12 +1,15 @@
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<section class="top-bar">
 <nav>
-    <a href="/">Home</a>
+    <a href="/">Home..</a>
     <% if(user) { %>
-      <a href="/users/<%=user._id%>/gems">View my Natural Gem Collection</a>
-      <a href="/users/">Explore Our Gem Collectors Community</a>
+      <a href="/users/<%=user._id%>/gems">View my Natural Gem Collection..</a>
+      <a href="/users/">Explore Our Gem Collectors Community..</a>
       <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>
-      <a href="/auth/sign-in">Sign In</a>
-      <a href="/auth/sign-up">Sign Up</a>
+      <a href="/auth/sign-in">Sign In..</a>
+      <a href="/auth/sign-up">Sign Up..</a>
     <% } %>
   </nav>
+</section>
   

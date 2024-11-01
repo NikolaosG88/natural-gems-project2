@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/new.css" />
   <title>Add a New App</title>
 </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Add a New Gem</h1>
+    <section class="greetings"><h1>Add a New Gem</h1></section>
+    <section class="crystals">
     <form action="/users/<%= user._id %>/gems" method="POST" enctype="multipart/form-data">
+      <div class="form-group"> 
         <label for="name">Gem Name:</label>
         <input type="text" name="name" id="name" required>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="characteristic">Characteristic:</label>
         <input type="text" name="characteristic" id="characteristic" required>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="description">Description</label>
         <textarea name="description" id="description"></textarea>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="pieces">Number of pieces:</label>
         <input type="number" name="pieces" id="pieces" required>
-         <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="image">Add image:</label>
         <input type="file" name="image" id="image" accept="image/*">
-        <br>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <button type="submit">Add New Gem</button>
-        <br>
+      </div>
     </form>
-    <br>
+    
+    <div class="form-group"> 
     <button><a href="/">Back to collection</a></button>
-      </form>
+    </div>
+
+  </section>
   </body>
 </html>

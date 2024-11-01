@@ -17,6 +17,7 @@ const gemsController = require('./controllers/gems.js');
 const userControler = require('./controllers/users');
 
 const port = process.env.PORT ? process.env.PORT : '3000';
+const path = require('path');
 
 
 mongoose.connect(process.env.MONGODB_URI);
@@ -27,6 +28,7 @@ mongoose.connection.on('connected', () => {
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
@@ -51,7 +53,7 @@ app.set('view engine', 'ejs');
 app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/gems', gemsController);
-app.use('/users', userControler); // Mount users controller at /users
+app.use('/users', userControler);
 
 
 //_______________________listeners________________________________//

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poller+One&display=swap');
+
+body {
+    font-family: Itim, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .member-info {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .list-info {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    
+  }
+  
+  .list-info li {
+    list-style-type: initial;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 7px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 88px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-info a {
+    text-decoration: none;
+    color: #4e29d6;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+   .list-info li:hover {
+    background-color: hsl(244, 72%, 50%);
+  }
+
+  .list-info li:hover a {
+    color: white;
+  }
+
+  button {
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  button:hover a {
+    color: yellow;
+  }
