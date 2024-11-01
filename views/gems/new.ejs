@@ -9,7 +9,7 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <section class="greetings"><h1>Add a New Gem</h1></section>
-    <section class="crystals">
+ 
     <form action="/users/<%= user._id %>/gems" method="POST" enctype="multipart/form-data">
       <div class="form-group"> 
         <label for="name">Gem Name:</label>

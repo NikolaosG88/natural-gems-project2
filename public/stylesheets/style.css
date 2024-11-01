@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* Overall page styling */
 body {
   font-family: Itim, sans-serif;
   margin: 0;
@@ -30,7 +29,7 @@ h1, h2 {
   color: #333;
 }
 
-/* Navigation Bar */
+
 .top-bar {
   width: 100%;
   background-color: #333;
@@ -50,7 +49,7 @@ h1, h2 {
   color: #ffdd57;
 }
 
-/* Greeting and Action Section */
+
 section.greetings, section.info-action {
   text-align: center;
   margin: 20px 0;
@@ -71,7 +70,7 @@ section.greetings, section.info-action {
   color: white;
 }
 
-/* Gems Collection */
+
 section.crystals .gems {
   display: flex;
   flex-direction: column;

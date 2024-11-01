@@ -3,40 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/new.css" />
   <title>Editing <%= gem.name %></title>
 </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Edit a Gem <%= gem.name %></h1>
+    <section class="greetings"><h1>Edit <%= gem.name %></h1></section>
     <form action="/users/<%= user._id %>/gems/<%= gem._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-        <label for="name">Gem Name:</label>
-        <input type="text" name="name" id="name" value="<%= gem.name %>" required>
-        <br>
+      <div class="form-group">
+      <label for="name">Gem Name:</label>
+      <input type="text" name="name" id="name" value="<%= gem.name %>" required>
+      </div>
+
+      <div class="form-group"> 
         <label for="characteristic">Characteristic:</label>
         <input type="text" name="characteristic" id="characteristic" value="<%= gem.characteristic %>" required>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="description">Description</label>
         <input type="text" name="description" id="description" value="<%= gem.description %>">
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="pieces">Number of pieces:</label>
         <input type="number" name="pieces" id="pieces" value="<%= gem.pieces %>" required>
-         <br>
+      </div>
+
+      <div class="form-group"> 
         <label for="image">Add image:</label>
         <input type="file" name="image" id="image" accept="image/*">
-        <br>
-        <br>
+      </div>
+
+      <div class="form-group"> 
         <% if (gem.image) { %>
             <p>Current Image:</p>
             <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="200">
           <% } %>
-          <br>
-          <br>
-        <button type="submit">Update Gem </button>
-        <br>
+      </div>
+
+      <div class="form-group"> 
+         <button type="submit">Update Gem </button>
+      </div>
     </form>
-    <br>
-    <button><a href="/">Back to collection</a></button>
-      </form>
+
+    <div class="form-group"> 
+  <button><a href="/">Back to collection</a></button>
+    </div>
+
   </body>
 </html>

@@ -7,22 +7,29 @@
 </head>
 <body>
   <%- include('../partials/_navbar.ejs') %>
-  <h1><%= user.username %>'s Gem Collection</h1>
-  <button><a href="/users">Back to Community</a></button>
-
-  <ul>
-    <% user.gems.forEach(gem => { %>
-      <li>
-        <h3><%= gem.name %></h3>
-        <p>Characteristic: <%= gem.characteristic %></p>
-        <p>Description: <%= gem.description %></p>
-        <p>Pieces: <%= gem.pieces %></p>
-        <% if (gem.image) { %>
-          <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="150">
-        <% } %>
-      </li>
-    <% }); %>
-  </ul>
-  <button><a href="/users">Back to Community</a></button>
+  <section class="greetings">
+    <h1>Explore <%= user.username %>'s Gem Collection</h1>
+  </section>
+  <section class="info-action"> <button><a href="/users">Back to Community</a></button></section>
+  <section class="crystals">
+    <div class="gems">
+      <% user.gems.forEach(gem => { %>
+        <div class="gem-item">
+          <% if (gem.image) { %>
+            <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="100">
+          <% } %>
+          <div class="gem-info">
+            <h2><%= gem.name %></h2>
+            <ul>
+              <li><strong>Main Characteristic:</strong> <%= gem.characteristic %></li>
+              <li><strong>Description:</strong> <%= gem.description %></li>
+              <li><strong>Pieces available:</strong> <%= gem.pieces %></li>
+            </ul>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+    <section class="info-action"> <button><a href="/users">Back to Community</a></button></section>
+  </section>
 </body>
 </html>

@@ -15,14 +15,14 @@ form {
     box-shadow: 0 4px 88px rgba(0, 0, 0, 0.1);
   }
   
-  /* Form group layout */
+  
   .form-group {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
   }
   
-  /* Label and input styling */
+ 
   label {
     font-weight: bold;
     margin-bottom: 5px;
@@ -39,14 +39,14 @@ form {
     width: 100%;
   }
   
-  /* Button container styling */
+
   .button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  /* Submit button styling */
+
   button {
     background-color: #007BFF;
     color: white;
@@ -62,7 +62,7 @@ form {
     color: white !important;
   }
   
-  /* Back button styling */
+
   .back-button {
     background-color: #555;
     color: white;

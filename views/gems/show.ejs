@@ -10,14 +10,13 @@
   <%- include('../partials/_navbar.ejs') %>
   <h1><%= gem.name%><h1>
 
-    <a href="/users/<%= user._id %>/gems/<%= gem._id %>/edit">
-        Edit this Gem
-      </a>
-    <form
-    action="/users/<%= user._id %>/gems/<%= gem._id %>?_method=DELETE"
-    method="POST"
-  >
+    <form action="/users/<%= user._id %>/gems/<%= gem._id %>?_method=DELETE" method="POST">
+      <a href="/users/<%= user._id %>/gems/<%= gem._id %>/edit">Edit this Gem </a>
+    </form>
+
+    <div class="form-group">
     <button type="submit">Delete this gem from my collectionn</button>
-  </form>
+    </div>
+    
 </body>
 </html>
