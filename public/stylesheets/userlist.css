@@ -8,9 +8,22 @@ body {
     padding: 20px;
   }
 
-  h2 {
-    margin-bottom: 20px;
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  h1 {
+    font-size: 1.0em; /* Adjust the font size to your preference */
+    margin-bottom: 0.1em;
+}
+
+h2 {
+    font-size: 1.0em; /* Adjust the font size as needed */
+    margin-bottom: 0.1em;
+}
   
   .members {
     display: flex;
@@ -39,6 +52,7 @@ body {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 88px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
   }
   
   .list-info a {
@@ -65,6 +79,7 @@ body {
     border: none;
     border-radius: 5px;
     text-align: center;
+    font-size: 20px;
   }
   
   button a {
