@@ -27,6 +27,7 @@ a {
 
 h1, h2 {
   color: #333;
+  font-size: 50px;
 }
 
 .top-bar {
@@ -91,7 +92,7 @@ section.crystals .gem-item {
 }
 
 section.crystals .gem-item img {
-  width: 100px;
+  width: 200px;
   height: auto;
   margin-right: 15px;
   border-radius: 5px;
