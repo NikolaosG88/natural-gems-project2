@@ -47,14 +47,14 @@ Planning Materials
 ---
 
 
-Build/Code Process
+Code Process
 ---
--**Project Setup:** Created the directory structure, set up basic server, routes, and session handling.
--**Data Models:** Defined User and Gem schemas using Mongoose (or ORM used) to represent the relationships and required attributes.
--**Authentication & Authorization:** Integrated session-based authentication and restricted actions based on user roles.
--**View Templates:** Used EJS templates to render pages with data passed from the server.
--**CRUD Operations:** Built routes and logic to enable users to manage their gem collections fully.
--**Styling and Layout:** Designed user interfaces with CSS for an intuitive and visually pleasing experience.
+- **Project Setup:** Created the directory structure, set up basic server, routes, and session handling.
+- **Data Models:** Defined User and Gem schemas using Mongoose (or ORM used) to represent the relationships and required attributes.
+- **Authentication & Authorization:** Integrated session-based authentication and restricted actions based on user roles.
+- **View Templates:** Used EJS templates to render pages with data passed from the server.
+- **CRUD Operations:** Built routes and logic to enable users to manage their gem collections fully.
+- **Styling and Layout:** Designed user interfaces with CSS for an intuitive and visually pleasing experience.
 
 
 Challenges
