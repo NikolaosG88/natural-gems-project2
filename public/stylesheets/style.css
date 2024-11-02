@@ -25,10 +25,6 @@ a {
   color: #007acc;
 }
 
-h1, h2 {
-  color: #333;
-  font-size: 40px;
-}
 
 .top-bar {
   width: 100%;
@@ -49,9 +45,16 @@ h1, h2 {
   color: #ffdd57;
 }
 
-section.greetings, section.info-action {
+section.greetings {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
+  font-size: 27px;
+}
+
+section.info-action {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 22px;
 }
 
 .info-action a {
@@ -92,7 +95,7 @@ section.crystals .gem-item {
 }
 
 section.crystals .gem-item img {
-  width: 200px;
+  width: 140px;
   height: auto;
   margin-right: 15px;
   border-radius: 5px;
