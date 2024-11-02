@@ -41,7 +41,7 @@ Sign Up / Log In: Users must create an account or log in to manage gem collectio
 Deployment Link
 ---
 Deployment Link
-[Add the deployment link here, e.g., https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
+[https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
 
 Planning Materials
 ---
