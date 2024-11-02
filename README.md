@@ -31,6 +31,7 @@ This project was chosen based on personal interest in natural gems and mineralog
 
 
 Getting Started/Code Installation
+JavaScript, CSS, HTML bcrypt, dotenv: ejs, ,express: ,express-session ,method-override, mongoose, morgan, multer
 ---
 
 
