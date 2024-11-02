@@ -31,6 +31,7 @@ This project was chosen based on personal interest in natural gems and mineralog
 
 
 Getting Started/Code Installation
+JavaScript, CSS, HTML bcrypt, dotenv: ejs, ,express: ,express-session ,method-override, mongoose, morgan, multer
 ---
 
 
@@ -56,12 +57,5 @@ Code Process
 - **CRUD Operations:** Built routes and logic to enable users to manage their gem collections fully.
 - **Styling and Layout:** Designed user interfaces with CSS for an intuitive and visually pleasing experience.
 
-
-Challenges
----
-
-
-Wins
----
 
 
