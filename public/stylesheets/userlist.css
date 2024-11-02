@@ -8,22 +8,6 @@ body {
     padding: 20px;
   }
 
-  .greetings {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  h1 {
-    font-size: 1.0em; /* Adjust the font size to your preference */
-    margin-bottom: 0.1em;
-}
-
-h2 {
-    font-size: 1.0em; /* Adjust the font size as needed */
-    margin-bottom: 0.1em;
-}
   
   .members {
     display: flex;
