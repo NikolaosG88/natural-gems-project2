@@ -21,7 +21,7 @@ This project was chosen based on personal interest in natural gems and mineralog
 
 ---
 
-##Timeframe & Working Team
+## Timeframe & Working Team
 ---
 - **Timeframe**: 28/10/2024 - 01/10/2024
 - **Team**: This project was developed individually or as part of a team with the following roles:
