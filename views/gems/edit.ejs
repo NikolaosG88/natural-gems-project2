@@ -21,8 +21,8 @@
       </div>
 
       <div class="form-group"> 
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description" value="<%= gem.description %>">
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" rows="4" required><%= gem.description %></textarea>
       </div>
 
       <div class="form-group"> 
@@ -38,7 +38,7 @@
       <div class="form-group"> 
         <% if (gem.image) { %>
             <p>Current Image:</p>
-            <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="150">
+            <img src="/<%= gem.image %>" alt="<%= gem.name %>" width="120">
           <% } %>
       </div>
 
