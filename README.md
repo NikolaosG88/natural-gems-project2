@@ -39,7 +39,7 @@ multer
 How to use Reading List
 ---
 Deployment Link
-[https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
+<a href="https://natural-gem-collection-4db0747dcabe.herokuapp.com">Just Click it!, and play</a>
 ---
 Code Process
 ---
