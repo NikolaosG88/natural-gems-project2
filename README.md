@@ -49,6 +49,3 @@ Code Process
 - **View Templates:** Used EJS templates to render pages with data passed from the server.
 - **CRUD Operations:** Built routes and logic to enable users to manage their gem collections fully.
 - **Styling and Layout:** Designed user interfaces with CSS for an intuitive and visually pleasing experience.
-
-
-
