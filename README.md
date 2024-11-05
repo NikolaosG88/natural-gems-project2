@@ -1,14 +1,11 @@
 # Natural Gems Collection
 ---
 ![crystal](https://github.com/user-attachments/assets/19b8550a-23a0-4b97-9dc5-5f1a405b81ff)
-
 ### Description of Project
 ---
 This project is a web application that allows users to showcase their collections of natural gems. It is designed to provide a visually appealing and interactive experience for users to manage and display their gem collections while connecting with other gem enthusiasts.
-
 ## Brief
 ---
-
 This project was chosen based on personal interest in natural gems and mineralogy. The application meets the following requirements:
 
 - **EJS Templates**: EJS is used to render views dynamically based on user data.
@@ -18,18 +15,14 @@ This project was chosen based on personal interest in natural gems and mineralog
 - **CRUD Functionality**: Users have full control over their collections with Create, Read, Update, and Delete (CRUD) capabilities.
 - **Authorization**: Only authenticated users can create, update, delete, or manage gem data.
 - **Deployment**: The application is deployed online, making it accessible for users on any device.
-
 ---
-
 ## Timeframe & Working Team
 ---
 - **Timeframe**: 28/10/2024 - 01/10/2024
 - **Team**: This project was developed individually or as part of a team with the following roles:
   - **Developer**: NikolaosG88
   - **Designer**: NikoslaosG88
-
-
-
+---
 Getting Started/Code Installation
 - **JavaScript, 
 - **CSS, 
@@ -43,21 +36,11 @@ mongoose,
 morgan, 
 multer
 ---
-
-
 How to use Reading List
----
-
-
-
 ---
 Deployment Link
 [https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
-
-Planning Materials
 ---
-
-
 Code Process
 ---
 - **Project Setup:** Created the directory structure, set up basic server, routes, and session handling.
