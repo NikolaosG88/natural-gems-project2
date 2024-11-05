@@ -37,7 +37,7 @@ morgan,
 multer
 ---
 Deployment Link
-<a href="https://natural-gem-collection-4db0747dcabe.herokuapp.com">Just Click it!, and play</a>
+<a href="https://natural-gem-collection-4db0747dcabe.herokuapp.com">Just Click!</a>
 ---
 Code Process
 ---
