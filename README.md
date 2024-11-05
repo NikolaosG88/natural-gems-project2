@@ -5,9 +5,10 @@
 ### Description of Project
 ---
 This project is a web application that allows users to showcase their collections of natural gems. It is designed to provide a visually appealing and interactive experience for users to manage and display their gem collections while connecting with other gem enthusiasts.
----
+
 ## Brief
 ---
+
 This project was chosen based on personal interest in natural gems and mineralogy. The application meets the following requirements:
 
 - **EJS Templates**: EJS is used to render views dynamically based on user data.
@@ -26,8 +27,9 @@ This project was chosen based on personal interest in natural gems and mineralog
 - **Team**: This project was developed individually or as part of a team with the following roles:
   - **Developer**: NikolaosG88
   - **Designer**: NikoslaosG88
- 
----
+
+
+
 Getting Started/Code Installation
 - **JavaScript, 
 - **CSS, 
@@ -41,12 +43,21 @@ mongoose,
 morgan, 
 multer
 ---
+
+
 How to use Reading List
 ---
+
+
+
 ---
 Deployment Link
 [https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
+
+Planning Materials
 ---
+
+
 Code Process
 ---
 - **Project Setup:** Created the directory structure, set up basic server, routes, and session handling.
