@@ -31,15 +31,25 @@ This project was chosen based on personal interest in natural gems and mineralog
 
 
 Getting Started/Code Installation
-JavaScript, CSS, HTML bcrypt, dotenv: ejs, ,express: ,express-session ,method-override, mongoose, morgan, multer
+- **JavaScript, 
+- **CSS, 
+- **HTML 
+- **bcrypt, 
+- **dotenv, 
+- **ejs, 
+express: express-session ,
+method-override, 
+mongoose, 
+morgan, 
+multer
 ---
 
 
 How to use Reading List
 ---
-Sign Up / Log In: Users must create an account or log in to manage gem collections.
 
-Deployment Link
+
+
 ---
 Deployment Link
 [https://natural-gem-collection-4db0747dcabe.herokuapp.com/]
