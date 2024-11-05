@@ -36,8 +36,6 @@ mongoose,
 morgan, 
 multer
 ---
-How to use Reading List
----
 Deployment Link
 <a href="https://natural-gem-collection-4db0747dcabe.herokuapp.com">Just Click it!, and play</a>
 ---
